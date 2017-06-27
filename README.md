@@ -14,6 +14,18 @@ complex and beautiful websites out of flat files for people who do not
 want to make a compromise between a CMS and a static blog engine.
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/lektor-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/lektor-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/lektor-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/lektor-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/lektor-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/lektor-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/lektor/badges/version.svg)](https://anaconda.org/conda-forge/lektor)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/lektor/badges/downloads.svg)](https://anaconda.org/conda-forge/lektor)
+
 Installing lektor
 =================
 
@@ -34,7 +46,6 @@ It is possible to list all of the versions of `lektor` available on your platfor
 ```
 conda search lektor --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -70,18 +81,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/lektor-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/lektor-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/lektor-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/lektor-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/lektor-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/lektor-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/lektor/badges/version.svg)](https://anaconda.org/conda-forge/lektor)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/lektor/badges/downloads.svg)](https://anaconda.org/conda-forge/lektor)
 
 
 Updating lektor-feedstock
