@@ -1,7 +1,7 @@
 {% set name = "Lektor" %}
-{% set version = "2.3" %}
+{% set version = "3.0.1" %}
 {% set hash_type = "sha256" %}
-{% set hash = "3b61045b79e05c25ea47cdc0de1e27404ec1f9ea1103024b642a7b7dd7575492" %}
+{% set hash = "7f0fd1b9b3b8deb2e4c4d633edbf4eff6577e2fcbed29ea68997dd1e0bede429" %}
 
 package:
   name: {{ name|lower }}
@@ -31,7 +31,7 @@ requirements:
     - flask
     - inifile
     - jinja2 >=2.4
-    - mistune
+    - mistune >=0.7.0
     - ndg-httpsclient
     - nodejs
     - pyasn1
@@ -62,3 +62,4 @@ about:
 extra:
   recipe-maintainers:
     - goanpeca
+    - rlaverde
