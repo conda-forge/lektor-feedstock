@@ -1,7 +1,7 @@
 {% set name = "Lektor" %}
-{% set version = "3.0.1" %}
+{% set version = "3.1" %}
 {% set hash_type = "sha256" %}
-{% set hash = "7f0fd1b9b3b8deb2e4c4d633edbf4eff6577e2fcbed29ea68997dd1e0bede429" %}
+{% set hash = "2ec5f8b6b813d4fbf9d45fc05a3cd374f87dc5590f8690fbd9855d3007b0b38f" %}
 
 package:
   name: {{ name|lower }}
