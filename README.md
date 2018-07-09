@@ -17,14 +17,15 @@ want to make a compromise between a CMS and a static blog engine.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/lektor-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/lektor-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/lektor-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/lektor-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/lektor-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/lektor-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/lektor-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/lektor-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/lektor/badges/version.svg)](https://anaconda.org/conda-forge/lektor)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/lektor/badges/downloads.svg)](https://anaconda.org/conda-forge/lektor)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-lektor-green.svg)](https://anaconda.org/conda-forge/lektor) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/lektor.svg)](https://anaconda.org/conda-forge/lektor) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/lektor.svg)](https://anaconda.org/conda-forge/lektor) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/lektor.svg)](https://anaconda.org/conda-forge/lektor) |
 
 Installing lektor
 =================
