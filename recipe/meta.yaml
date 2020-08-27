@@ -18,22 +18,26 @@ build:
 requirements:
   build:
     - python
-    - pip
   run:
     - babel
     - click >=6.0
     - exifread
+    - filetype >=1.0.7
     - flask
     - inifile
-    - jinja2 >=2.4
-    - mistune >=0.7.0
+    - jinja2 >=2.11
+    - mistune >=0.7.0,<2
     - ndg-httpsclient
     - nodejs
+    - pip
     - pyasn1
     - pyopenssl >=0.13
     - python
+    - python-slugify
     - requests
+    - setuptools
     - watchdog
+    - werkzeug <1
 
 test:
   imports:
