@@ -1,4 +1,4 @@
-{% set version = "3.2.0" %}
+{% set version = "3.3.0" %}
 
 package:
   name: lektor
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/L/Lektor/Lektor-{{ version }}.tar.gz
-  sha256: 5ab0c55aaea3cb98efdbf33b44adfd8291d0724e8849892eb13767d5cdb1fe40
+  sha256: 5537e5543b0b0a0238ed2601e77c59944e08f0985bd4747680900abdd1ec9976
 
 build:
   noarch: python
@@ -16,7 +16,7 @@ build:
     - lektor = lektor.cli:main
 
 requirements:
-  build:
+  host:
     - pip
     - python
   run:
