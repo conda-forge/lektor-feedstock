@@ -1,4 +1,4 @@
-{% set version = "3.2.0" %}
+{% set version = "3.3.4" %}
 
 package:
   name: lektor
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/L/Lektor/Lektor-{{ version }}.tar.gz
-  sha256: 5ab0c55aaea3cb98efdbf33b44adfd8291d0724e8849892eb13767d5cdb1fe40
+  sha256: 02a2840cab815579a3fa2df2d07360d8d3a21c71586d01a192bd35c7c76d0979
 
 build:
   noarch: python
@@ -16,36 +16,39 @@ build:
     - lektor = lektor.cli:main
 
 requirements:
-  build:
+  host:
     - pip
-    - python
+    - python >=3.6
+    - setuptools >=45
+    - setuptools_scm >=6
   run:
     - babel
     - click >=6.0
     - exifread
     - filetype >=1.0.7
     - flask
-    - inifile
-    - jinja2 >=2.11
-    - mistune >=0.7.0,<2
-    - ndg-httpsclient
+    - inifile >=0.4.1
+    - jinja2 >=3.0
+    - markupsafe
+    - mistune >=0.7.0, <2
     - nodejs
     - pip
-    - pyasn1
-    - pyopenssl >=0.13
-    - python
+    - python >=3.6
     - python-slugify
+    - pytz
     - requests
     - setuptools
     - watchdog
-    - werkzeug <1
+    - werkzeug <3
 
 test:
   imports:
     - lektor
 
   commands:
+    - pip check
     - lektor --help
+    - lektor --version
 
 about:
   home: https://getlektor.com
