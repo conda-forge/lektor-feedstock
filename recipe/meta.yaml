@@ -46,7 +46,9 @@ test:
     - lektor
 
   commands:
+    - pip check
     - lektor --help
+    - lektor --version
 
 about:
   home: https://getlektor.com
