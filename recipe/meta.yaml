@@ -29,6 +29,7 @@ requirements:
     - flask
     - inifile >=0.4.1
     - jinja2 >=3.0
+    - markupsafe
     - mistune >=0.7.0, <2
     - ndg-httpsclient
     - nodejs
@@ -37,6 +38,7 @@ requirements:
     - pyopenssl >=0.13
     - python >=3.6
     - python-slugify
+    - pytz
     - requests
     - setuptools
     - watchdog
