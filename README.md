@@ -1,11 +1,11 @@
-About lektor
-============
+About lektor-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/lektor-feedstock/blob/main/LICENSE.txt)
 
 Home: https://getlektor.com
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/lektor-feedstock/blob/main/LICENSE.txt)
 
 Summary: The lektor static file content management system.
 
