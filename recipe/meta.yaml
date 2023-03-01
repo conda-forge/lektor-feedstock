@@ -1,26 +1,30 @@
-{% set version = "3.3.7" %}
+{% set name = "Lektor" %}
+{% set import = "lektor" %}
+{% set entrypoint = "lektor" %}
+{% set version = "3.3.8" %}
+{% set sha256 = "fc3ba8a178638cad5b7e94bb0746aaa41b76dd159f9e4963e39ad173aa0d472d" %}
 
 package:
-  name: lektor
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/L/Lektor/Lektor-{{ version }}.tar.gz
-  sha256: db2eb3cf360dc187500f347f83ef40bd6093b5e07c3f511867bf84215d2d63f1
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: {{ sha256 }}
 
 build:
   noarch: python
   number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
-    - lektor = lektor.cli:main
+    - {{ entrypoint }} = {{ import }}.cli:main
 
 requirements:
   host:
     - pip
     - python >=3.6
     - setuptools >=45
-    - setuptools_scm >=6
+    - setuptools_scm >=6.2
   run:
     - babel
     - click >=6.0
@@ -42,20 +46,23 @@ requirements:
     - werkzeug <3
 
 test:
+  requires:
+    - pip
+
   imports:
-    - lektor
+    - {{ import }}
 
   commands:
     - pip check
-    - lektor --help
-    - lektor --version
+    - {{ entrypoint }} --help
+    - {{ entrypoint }} --version
 
 about:
   home: https://getlektor.com
   license: BSD-3-Clause
   license_file: LICENSE
   license_family: BSD
-  summary: The lektor static file content management system.
+  summary: The {{ name }} static file content management system.
   description: |
     A flexible and powerful static content management system for building
     complex and beautiful websites out of flat files for people who do not
