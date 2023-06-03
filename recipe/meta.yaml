@@ -43,7 +43,7 @@ requirements:
     - requests
     - setuptools >=45.2
     - watchdog
-    - werkzeug <3
+    - werkzeug <2.4
 
 test:
   requires:
