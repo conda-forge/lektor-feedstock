@@ -7,7 +7,7 @@ Home: https://getlektor.com
 
 Package license: BSD-3-Clause
 
-Summary: The lektor static file content management system.
+Summary: The Lektor static file content management system.
 
 Development: https://github.com/lektor/lektor
 

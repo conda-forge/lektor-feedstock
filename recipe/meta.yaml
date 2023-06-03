@@ -1,8 +1,8 @@
 {% set name = "Lektor" %}
 {% set import = "lektor" %}
 {% set entrypoint = "lektor" %}
-{% set version = "3.3.8" %}
-{% set sha256 = "fc3ba8a178638cad5b7e94bb0746aaa41b76dd159f9e4963e39ad173aa0d472d" %}
+{% set version = "3.3.9" %}
+{% set sha256 = "0819d430aa2250e86ae2cfb7c5cae81f7425fec43b258d7227a02ad8aaee30a7" %}
 
 package:
   name: {{ name|lower }}
@@ -36,12 +36,12 @@ requirements:
     - markupsafe
     - mistune >=0.7.0, <2
     - nodejs
-    - pip
+    - pip >=21.1
     - python >=3.6
     - python-slugify
     - pytz
     - requests
-    - setuptools
+    - setuptools >=45.2
     - watchdog
     - werkzeug <3
 
@@ -62,7 +62,7 @@ about:
   license: BSD-3-Clause
   license_file: LICENSE
   license_family: BSD
-  summary: The {{ name }} static file content management system.
+  summary: The Lektor static file content management system.
   description: |
     A flexible and powerful static content management system for building
     complex and beautiful websites out of flat files for people who do not
