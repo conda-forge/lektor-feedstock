@@ -9,7 +9,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name|lower }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name|lower }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
@@ -22,7 +22,7 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
     - setuptools >=45
     - setuptools_scm >=6.2
   run:
@@ -37,7 +37,7 @@ requirements:
     - mistune >=0.7.0, <2
     - nodejs
     - pip >=21.1
-    - python >=3.6
+    - python >={{ python_min }}
     - python-slugify
     - pytz
     - requests
@@ -47,6 +47,7 @@ requirements:
 
 test:
   requires:
+    - python {{ python_min }}
     - pip
 
   imports:
