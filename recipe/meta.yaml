@@ -1,8 +1,8 @@
 {% set name = "Lektor" %}
 {% set import = "lektor" %}
 {% set entrypoint = "lektor" %}
-{% set version = "3.3.13" %}
-{% set sha256 = "86b30f4ad7d6ceb8a8755591712f6737e30a8701fcc5a1d0ced4c99c6903e271" %}
+{% set version = "3.3.14" %}
+{% set sha256 = "b06157b3051bc4d5c245bfeefd63330dcb17ea0ef19bed8f8c0e2de9e319a1bb" %}
 
 package:
   name: {{ name|lower }}
